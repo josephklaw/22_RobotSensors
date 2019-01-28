@@ -28,12 +28,12 @@ def main():
     #run_test_beep_and_tone()
     #run_test_go_straight_for_seconds()
     # run_test_go_straight_for_inches_using_time()
-    run_test_go_straight_for_inches_using_sensor()
+    #run_test_go_straight_for_inches_using_sensor()
     # run_test_raise_arm()
     # run_test_lower_arm()
     # run_test_go_straight_until_black()
     # run_test_go_forward_until_distance_is_less_than()
-    # run_test_tones_until_touch_sensor_is_pressed()
+    run_test_tones_until_touch_sensor_is_pressed()
 
 
 def run_test_beep_and_tone():
@@ -194,14 +194,14 @@ def run_test_go_straight_for_inches_using_sensor():
     drive_system.go_straight_for_inches_using_sensor(12, -50)
 
     # -------------------------------------------------------------------------
-    # TODO: 9.  With your instructor, implement the
+    # DONE: 9.  With your instructor, implement the
     #      go_straight_for_inches_using_sensor    method of   DriveSystem.
     #      The tests are already written for you -- READ THEM (above).
     # -------------------------------------------------------------------------
 
 
 # -----------------------------------------------------------------------------
-# TODO 10:  With your instructor, do quiz questions XXX through XXX.
+# DONE 10:  With your instructor, do quiz questions XXX through XXX.
 #          After you understand the answers to those questions,
 #          mark this _TODO_ as DONE.
 # -----------------------------------------------------------------------------
@@ -322,6 +322,7 @@ def run_test_tones_until_touch_sensor_is_pressed():
     # -------------------------------------------------------------------------
     # TODO: 15. Implement this test method, then implement the method it tests.
     # -------------------------------------------------------------------------
+    tones_unt
 
 
 ###############################################################################
@@ -406,7 +407,13 @@ class DriveSystem(object):
         Plays an increasing sequence of short tones,
         stopping when the touch sensor is pressed.
         """
-        pass
+        # b = ToneMaker()
+        #
+        # while True:
+        #     for k in range(10000000):
+        #         b.tone(k,50)
+        #         if TouchSensor() == self._touch_sensor.is_pressed:
+        #             break
 
 
 ###############################################################################
